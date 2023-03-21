@@ -1,0 +1,97 @@
+@import url(https://fonts.google.com/specimen/Montserrat?query=mont);
+@import url(https://fonts.google.com/specimen/Open+Sans?query=open+sans);
+
+:root{
+  --white: #FFFFFF;
+  --orange: #FAB367;
+  --red: #FF4848;
+  --brown: #CC6119;
+  --grey: #ECEFF3;
+  --black: #232628;
+  --bleu: #6C98E1;
+}
+body {
+    padding: 2.5rem;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+  }
+  .accessibility{
+    position: absolute;
+    left: -1500px;
+}
+.image1{
+  padding: 15px 0 0 100px;
+  width: 31px;
+}
+.image2{
+  padding: 10px 0 0 30px;
+  width: 100px;
+}
+#open{
+  padding-left: 70px;
+} 
+header div{
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--black);
+}
+ul{
+  height: 40px;
+  background-color: var(--grey);
+  list-style: none;
+  margin: 0;
+  padding-left: 900px;
+  display: flex;
+  align-items: center;
+  
+}
+li{
+  color: var(--black);
+  padding-right: 30px;  
+}
+header h1{
+  font-size: 2em;
+  color: var(--white);
+  padding: 0 30px 0 140px;
+}
+#numero{
+  font-size: 1.2em;
+}
+a:hover{
+  display: inline-block;
+  background-color: var(--brown);
+  color: var(--white);
+  height: 33px;
+  padding-top: 8px;
+}
+a{
+  text-decoration: none;
+  color: var(--black);
+}
+.grid {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+.item {
+    padding: 1.6rem 0;
+    background-color: 
+  coral;
+  }
+  .espacementParagraphe{
+    line-height: 70%;
+}
+.espacementHeader{
+  padding-right: 30px;
+}
+.ecritureMarron{
+  font-size: .6rem;
+  color: var(--brown);
+  margin: 0 0 0 0;
+}
+.ecritureBlanche{
+  font-size: .6rem;
+  color: var(--white);
+}

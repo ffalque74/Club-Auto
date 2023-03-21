@@ -1,0 +1,290 @@
+/*Import des fonts choisie par le disigner*/
+@import url(https://fonts.google.com/specimen/Montserrat?query=mont);
+@import url(https://fonts.google.com/specimen/Open+Sans?query=open+sans);
+/*Initialisation des choix de couleur pour le document*/
+:root{
+    --white: #FFFFFF;
+    --orange: #FAB367;
+    --red: #FF4848;
+    --brown: #CC6119;
+    --deepgrey: #7a7f86;
+    --grey: #ced4dd;
+    --black: #232628;
+    --bleu: #6C98E1;
+}
+/*Choix de la famille de style et taille pour le document*/
+body{
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+h1{
+    font-size: 2em;
+}
+/*notion d'accésibilité pour les personne ayant un handicap */
+.accessibility{
+    position: absolute;
+    left: -1500px;
+}
+/*modification taille de l'image d'adresse dans le Header */
+.image1{
+    padding: 15px 0 0 100px;
+    width: 30px;
+}
+/*modification taille de l'image de téléphone dans le Header */
+.image2{
+    padding: 10px 0 0 30px;
+    width: 100px;
+}
+/*modification taille image Rss Footer*/
+#imgRss{
+    width: 42px;
+    position: relative;
+    left:-5px;
+    top: 16px;
+}
+/*modification taille image Reseaux Sociaux Footer*/
+.image4{
+    margin-left: -5px;
+    width: 70%;
+}
+/*Pour que l'image prenne toute la largeur de la page*/
+#imgVehicule1{
+    width: 100%;   
+}
+#photoClients{  
+    width: 100%;
+}
+#imgEntretien{
+    width: 100%;
+}
+#imgVenteLocation{
+    width: 100%;
+    position: relative;
+    top: -370px;  
+    z-index: 100;
+}
+/*Pour que le titre H1 remonte et mise en forme*/
+#mainSection1{
+    background-color: var(--black);
+}
+#mainSection1 h1{
+    padding-left: 150px; 
+    margin: 0;
+    height: 3em;
+    display: flex;
+    align-items: center;  
+}
+#secondeSection{
+    box-sizing: border-box;
+    display: grid;
+    align-self: center;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2 , 1fr);
+    margin: 40px 15%;  
+}
+#thirdSection{
+    box-sizing: border-box;
+    display: grid;
+    align-self: center;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2 , 1fr);
+    margin: 20px 15% 0 15%; 
+}
+#fourthSection{
+    
+    
+
+}
+#fourthSection h1{
+  
+    
+ 
+   
+}
+/*déplacement vers la droite des horaires d'ouverture dans le Header */
+#open{
+    padding-left: 70px;
+}
+/*mofification mise en forme Header pour être sur une même ligne horizontale */
+header div{
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--black);
+}
+/*suppression des puces de liste, modification hauteur, couleur, couleur de fond et positionnement*/
+nav ul{
+    height: 40px;
+    background-color: var(--grey);
+    list-style: none;
+    margin: 0;
+    padding-left: 900px;
+    display: flex;
+    align-items: center;
+}
+/*positionnement et changement couleur éléments de la NavBar dans le Header*/
+nav ul li{
+    color: var(--black);
+    padding-right: 30px;
+      
+}
+/*Ajout d'une coche personalisée à la liste*/
+#coches{
+    list-style-image: url(https://img.icons8.com/external-tal-revivo-bold-tal-revivo/24/000000/external-checkmark-sign-with-outline-effect-isolated-on-white-background-votes-bold-tal-revivo.png);
+}
+header h1{
+    font-size: 2em;
+    color: var(--white);
+    padding: 0 30px 0 140px;
+}
+/* modification de la taille du numéro de téléphone dans le Header */
+#numero{
+    font-size: 1.2em;
+}
+/*Survol des liens de la Navbar */
+a:hover{
+    display: inline-block;
+    background-color: var(--brown);
+    color: var(--white);
+    height: 33px;
+    padding-top: 8px;
+}
+/*Suppression des surlignement des lien et changement de couleur */
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+/*Centrage de la barre de copyright*/
+footer{
+    background-color: var(--black);
+}
+#Copyright{
+    margin: 0% 13.8% 0 8%;
+    height: 40px;
+    font-size: .7em;
+    border: .1em solid var(--deepgrey);
+    border-right: hidden;
+    border-bottom: hidden;
+    border-left: hidden;
+    color: var(--deepgrey);
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+/*placement sur 4 colonnes les paragraphes du footer en utilisant les GRIDS */
+.grid {
+    box-sizing: border-box;
+    display: grid;
+    align-self: center;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4 , 1fr);
+    padding: 0 120px;
+}
+/*Taille et couleur des titre h1 dans le Footer */
+.grid h1{
+    color: var(--white);
+    font-size: .8em;
+    margin: 0;
+}
+/*couleur grises des écritures Footer*/
+.items p{
+    color: var(--deepgrey);
+    font-size: .7em;
+    margin: 0;
+}
+/*choix positionnement dans les GRIDS des items*/
+.items {
+    box-sizing: border-box;
+    display: grid;
+    padding: 1.5rem 30px;
+}
+ /*classe des espacement_hauteur interligne paragraphe de l'adresse et téléphone dans le Header*/ 
+.espacementParagraphe{
+    line-height: 70%;
+}
+/*modification longuer / hauteur champ email*/
+#email{
+    line-height: 35px;
+    font-size: .8em;
+    width: 220px;
+}
+.espacementHeader{
+    padding-right: 30px;
+}
+/*classe écriture marron dans le Header*/
+.ecritureMarron{
+    font-size: .6rem;
+    color: var(--brown);
+    margin: 0 0 0 0;
+}
+/*classe écriture blanche dans le Header*/
+.ecritureBlanche{
+    font-size: .6rem;
+    color: var(--white);
+}
+/*écriture bleue dans le Footer*/
+.ecritureBleu{
+    font-size: .8rem;
+    color: var(--bleu);
+}
+.ecritureMarronH1{
+    color: var(--brown);
+}
+.ecritureBlancheH1{
+    color: var(--white);
+    padding-right: 5px;
+}
+/**
+li::before{
+  content: "🏀";
+  padding-right: 8px;
+  color: green;
+  list-style-image: url(https://img.icons8.com/color/48/null/checkmark--v1.png);
+}
+**/
+#fondNoir{
+    z-index: 110;
+    width: 100%;
+    height: 750px;
+    background: var(--black);
+    position: relative;
+    top: -1080px;  
+}
+#fondRouge{
+    z-index: 110;
+    padding: 25px 60px;
+    width: 25%;
+    height: 150px;
+    line-height: 100%;
+    background: var(--red);
+    opacity: .6;
+    position: relative;
+    top: 1px;  
+    left: 50%;
+}
+#fondOrange{
+    z-index: 110;
+    padding: 25px 60px;
+    width: 25%;
+    height: 150px;
+    line-height: 100%;
+    background: var(--orange);
+    opacity: .6;
+    position: relative;
+    top: 200px;  
+    left: 12%;
+}
+#vehiculeRecents{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .1em solid var(--brown);
+    border-right: hidden;
+    border-top: hidden;
+    border-left: hidden;
+    margin: 0 13.8% 0 8%;
+    padding: 40px 0 10px 0;
+}
+.fontH1VenteLocation{
+    font-size: 20px;
+}
