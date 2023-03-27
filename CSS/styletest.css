@@ -1,0 +1,93 @@
+
+
+/*Ajout de nos couleurs personnalisées*/
+:root{
+    --white: #FFFFFF;
+    --orange: #FAB367;
+    --red: #FF4848;
+    --brown: #CC6119;
+    --deepgrey: #7a7f86;
+    --grey: #ced4dd;
+    --black: #232628;
+    --bleu: #6C98E1;
+}
+.textBlanc{
+    color: var(--white);
+}
+.textGris{
+    color: var(--deepgrey);
+}
+.textBleu{
+    color: var(--bleu);
+}
+.textMarron{
+    color: var(--brown);
+}
+.bgGris{
+    background-color: var(--deepgrey);
+}
+.bgOrange{
+    background-color: var(--orange);
+}
+.bgNoir{
+    background-color: var(--black);
+}
+.textSize08{
+    font-size: .8rem;
+}
+.textSize14{
+    font-size: 1.4rem;
+}
+.hauteurDeLigne50{ 
+    line-height: 50%;
+}
+/*survol des éléments de la navbar*/
+a:hover{
+    display: inline-block;
+    background-color: var(--brown);
+    color: var(--white);
+    height: 40px;
+    padding-top: 0px;
+}
+/* HEADER */
+
+/*gestion interligne Adresse Header*/
+#mainAdress{
+    line-height: 110%;
+}
+/*décallage du Clubauto dans le header de 5% vers la gauche*/
+#clubauto{
+    padding-right: 5%;
+}
+/*gestion interligne Téléphone Header*/
+#mainPhone{
+    line-height: 150%;
+}
+/*gestion interligne Ouverture Header*/
+#mainOuverture{
+    line-height: 120%;
+}
+/*décalage de 20px vers la droite du téléphone*/
+#telephone{
+    padding-left: 20px;
+}
+/*Positionnement du bouton bleu sur fond noir pour les smartphones*/
+#nav-toggle-button{ 
+    background-color: var(--black);
+    position: absolute;
+    top: -90px;
+    left: 85%; 
+}
+
+
+/* FOOTER */
+
+/*Ajout d'un padding à droite et gauche du footer*/
+footer{
+    padding: 0 5% 0 10%;
+}   
+nav{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+}
