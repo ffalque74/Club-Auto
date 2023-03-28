@@ -15,7 +15,7 @@
         <section class="row bgNoir" id="firstSection">   
             <!--Ajout du heaader smartphone-->
             <div class="d-none-md">
-                <article class="d-lg-none d-flex pt-4 bgNoir" id="smartphone">
+                <article class="d-lg-none d-flex pt-4 bgNoir mt-0" id="smartphone">
                     <img class="px-2"src="Images/icon-telephone.png" alt="telephone" class="img-responsive" style="max-width: 35%; height: 35%;">
                     <p><span class="fontSize08"><strong>TELEPHONE :</strong>
                     </span><br><span class="textBlanc textSize14">01 23 45 67 89</span>
@@ -59,7 +59,7 @@
         </section>
         <section id="secondSection">
             <!--Navbar Full responsive -->
-            <nav class="navbar navbar-expand-lg navbar-light bgGris " id="">
+            <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex bgGris ">
                 <div class="container"> <!--On demande a ce que le container soit responsive-->
                     <button id="nav-toggle-button" class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--Definition de l'apparition du bouton-->
@@ -90,14 +90,68 @@
         </section>
     </header>
     <main>
-        <div>
-            <h1 class="textBlanc h2"><strong><span >CLUB AUTO LE MEILLEUR de l'AUTOMOBILE</h1>
-            <img src="Images/vehicule1.jpg" alt="image dee véhicules" class="img-fluid">
+        <div class="container-fluid pe-0 ps-0" id="annonce">
+            <img src="Images/vehicule1.jpg" alt="image dee véhicules" width=100% id="imageVehicules" class="d-none d-lg-flex ">
+            <h1 id="mainH1" class="textBlanc h1 bgNoir mb-0 pt-4"><strong>CLUB AUTO &nbsp;</strong><span ><span class="textMarron h1"> <strong> MEILLEUR DE l'AUTOMOBILE</strong></span></strong></h1> 
+        </div>
+        <div class="row pt-5 ms-4 me-4">
+            <img class="col-12 col-lg-6 mb-4" src="Images/clients.jpg" alt="image de clients heureux">
+            <article class="col-12 col-lg-6">
+                <h1 class="h1"><strong>BIENVENUE CHEZ </strong> <span class="textMarron"><strong>CLUB AUTO</strong></span></h1>
+                    <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>  
+            </article>
+        </div>
+        <div class="d-flex row pt-5 ms-4 me-4">
+            <article class="col-12 col-lg-6">
+                <h1>LE MEILLEUR DE L'AUTOMOBILE</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <ul class="pt-4 pb-4" id="coches">
+                    <li><p>Lorem ipsum dolor sit amet</p></li>
+                    <li><p>Lorem ipsum dolor sit amet</p></li>
+                    <li><p>Lorem ipsum dolor sit amet</p></li>
+                    <li><p>Lorem ipsum dolor sit amet</p></li>
+                    <li><p>Lorem ipsum dolor sit amet</p></li>
+                </ul>
+            </article>
+            <img class="col-12 col-lg-6 mb-4" src="Images/entretien.jpg" alt="image d'un technicien qui nettoye une voiture">
+        </div>
+        <div class="mt-0 row d-flex">
+            <div class="d-none d-lg-flex col-lg-1" id="vide">
+            </div>
+            <div class="col-12 col-lg-4 bgOrange pe-4 ps-4 pb-3 pt-3" id="location">
+                <h1><strong>Vous souhaitez louer ?</strong></h1>
+                <p class="textBlanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+            </div >
+            <div class="d-none d-lg-flex col-lg-1" id="vide">
+            </div>
+            <div class="col-12 col-lg-4 bgRouge pe-2 ps-2 pt-3 pb-3" id="vente">
+                <h1><strong>Vous souhaitez acheter ?</strong></h1>
+                <p class="textBlanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  
+                </p>
+            </div >
+            <div class="container-fluid me-0 ms-0 bgNoir">
+                <img src="Images/vente-location.jpg" alt="image de vente et de location" id="imgVente" width=100% >
+            </div>
+            <div class="bgNoir">
+                <h1 class="textBlanc h1"><strong>VEHICULES RECENTS</strong></h1>
+            </div>
+
+
         </div>
     </main>
 
-    <footer class="bgNoir">
-        <section class="row pt-5 gx-4">
+    <footer class="bgNoir mt-0 pt-0">
+        <section class="row mt-0 pt-5 gx-4">
             <div class="col-12 col-md-6 col-lg-3" id="footerClubauto">
                 <h1 class="textBlanc h2"><strong><span class="textBleu">CLUB</span class="h2"> AUTO</strong></h1>
                 <p class="textGris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -151,7 +205,7 @@
                 
             </div>
         </section>
-        <hr>
+    
         
     </footer>
     

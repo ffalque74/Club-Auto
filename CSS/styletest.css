@@ -32,6 +32,9 @@
 .bgNoir{
     background-color: var(--black);
 }
+.bgRouge{
+    background-color: var(--red);
+}
 .textSize08{
     font-size: .8rem;
 }
@@ -78,8 +81,13 @@ a:hover{
     top: -90px;
     left: 85%; 
 }
+/* MAIN */
+#mainH1{
+    height: 120px;
+    padding: 0 15%;
+   
 
-
+}
 /* FOOTER */
 
 /*Ajout d'un padding à droite et gauche du footer*/
@@ -90,4 +98,36 @@ nav{
     padding-top: 0;
     padding-bottom: 0;
     margin: 0;
+   
+}
+/*Ajout d'une coche personalisée à la liste*/
+#coches{
+    list-style-image: url(https://img.icons8.com/external-tal-revivo-bold-tal-revivo/24/000000/external-checkmark-sign-with-outline-effect-isolated-on-white-background-votes-bold-tal-revivo.png);
+}
+#imgVente{ 
+    z-index: 90;
+    position: relative;
+    top: -200px;
+    
+}
+
+#location{
+    z-index: 100;
+    position: relative;
+    top: 250px;
+    left: 0%;
+    opacity: 90%;
+   
+
+}
+#vente{
+    z-index: 100;
+    position: relative;
+    top: 250px;
+    left: 0%;
+    opacity: 90%;
+}
+#vide{
+    margin: 0;
+    
 }
