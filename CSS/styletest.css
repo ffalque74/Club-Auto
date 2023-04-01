@@ -67,7 +67,13 @@ a:hover{
 }
 /*décallage du Clubauto dans le header de 5% vers la gauche*/
 #clubauto{
+    
+  
     padding-right: 5%;
+}
+#maincontent{
+    position: relative;
+    top: -16px;
 }
 /*gestion interligne Téléphone Header*/
 #mainPhone{
@@ -82,7 +88,13 @@ a:hover{
     padding-left: 20px;
 }
 /*Positionnement du bouton bleu sur fond noir pour les smartphones*/
-#nav-toggle-button{ 
+#nav-toggle-button-vente{ 
+    background-color: var(--black);
+    position: absolute;
+    top: -220px;
+    left: 85%; 
+}
+#nav-toggle-button-index{ 
     background-color: var(--black);
     position: absolute;
     top: -90px;
@@ -120,21 +132,23 @@ nav{
 
 #location{
     z-index: 100;
+    margin-top: 1rem;
     position: relative;
-    top: 130px;
-    left: 0%;
+    top: 250px;
+    left: 0;
     opacity: 90%;
    
 
 }
 #vente{
     z-index: 100;
+    margin-top: 1rem;
     position: relative;
-    top: 130px;
-    left: 0%;
+    top: 250px;
+    left: 0;
     opacity: 90%;
 }
-#vide{
+.vide{
     margin: 0;
     
 }
@@ -146,6 +160,11 @@ nav{
 #bordureFooter{
     margin: 0 9% 0 0;
     border-color: var(--deepgrey)!important;
+    border-bottom-width: small !important;
+}
+#bordureVente{
+    margin-left: 170px;
+    border-color: var(--grey)!important;
     border-bottom-width: small !important;
 }
 #vehiculeRecent{
@@ -165,6 +184,10 @@ nav{
     height: 60px;
     margin-top: 10px;
 }
+.hauteur2{
+    height: 2em;
+    margin-top: 30px;
+}
 .fondDescription{
     background-color: rgb(45, 45, 45);
     margin: 15px;
@@ -180,8 +203,8 @@ nav{
 }
 #banniere{
     position: relative;
-    top: 300px;
-    left: 150px;
+    top: 400px;
+    left: 3em;
 }
 #bouton{
     position: relative;
@@ -192,7 +215,45 @@ nav{
     padding-top: 10px;
     height: 50px;
 }
-.formulaire{
+.formulaire{ƒ
     width:500px ;
 }
-
+#h1Vente{
+    position: relative;
+    left:  1em;
+    top: 7rem;ƒ
+    font-size: 4em;
+    z-index: 25;
+}
+.imgVente2{
+    position: relative;
+    top: -6.3rem;
+    -webkit-filter: brightness(60%);
+    z-index: 20;
+}
+#paragrapheVente{
+    position: relative;
+    top: -100px;
+}
+.savoirPlus{
+    text-decoration: none;
+}
+#venteclubAutoHeader{
+    font-size: 60px;
+}
+#accordeonVenteSM{
+    z-index: 30;
+    position: relative;
+    top: -160px;
+   
+}
+.prixVenteSM{
+    position: relative;
+    left: 292px;
+    top: 295px;
+    height: 2em;
+    font-size: ;
+}
+.separationVente{
+    margin-left: 10%;
+}

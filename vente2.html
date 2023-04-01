@@ -102,7 +102,8 @@
             <img src="Images/imgVente.png" alt="image d'une voiture" class="d-none d-lg-flex img-fluid imgVente2">
         </figure>
         <div class="row"><!-- Separation de la feuille en 2 parties -->
-            <div class="col-12">
+            <p class="col-lg-2"></p>
+            <div class="col-9">
                 <div class="row">
                     <div class="col-1 d-lg-none">
                     </div>
@@ -262,7 +263,7 @@
                 </div>
             </div>
             <!-- Les des voitures à vendre -->
-            <div class="row col-12 col-lg-9 mt">
+            <div class="col-12 col-lg-9 row">
                 <div>
                     <div class="row">
                         <!-- Ajout d'une colonne vide -->
@@ -278,7 +279,7 @@
                     </div>
                 </div>
                 <div class="row"> 
-                    <div class="row col-12 col-lg-09">
+                    <div class="row col-12 col-lg-9">
                         <div class="col-1"></div>
                         <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom" id="separationVente"></p> 
                         <!-- Colonne Vide -->
@@ -397,6 +398,163 @@
                         <div class="col-1"></div>
                         <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom" id="separationVente"></p> 
                         <p class="d-none col-lg-9 border-bottom mb-4" id="bordureVente"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- DEBUT ACCORDEON -->
+            <div class="col-lg-2">
+                <div class="row bgNoir pt-3 pb-2 mb-3 me-1 ms-1">
+                    <img src="Images/icone-voiture.png" alt="icone de recherche de véhicule" class="col-3 col-lg-3">
+                    <h1 class="h4 col-5 col-lg-8 textBlanc bgNoir">Rechercher</h1>
+                </div>
+                
+                <div class="accordion accordion-flush shadow-lg mt-3" id="accordionFlushVente">
+                    <!-- Accordeon Type-->
+                    <div class="accordion-item px-3 mb-2">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Type
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushVente">
+                        <div class="accordion-body">
+                                <select id="oType" name="oType" class="custom-select bgGris ">
+                                <option selected="selected" value="0">Type</option>
+                                <option value="1">Berline</option>
+                                <option value="2">Monospace</option>
+                                <option value="3">Cabriolet</option>
+                                <option value="4">Utilitaire</option>
+                                <option value="0">--------------------</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordeon Carburant-->
+                    <div class="accordion-item px-3 mb-2 h4">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Carburant
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushVente">
+                        <div class="accordion-body">
+                                <select id="oCarburant" name="oCarburant" class="custom-select bgGris ">
+                                <option selected="selected" value="0">Carburant</option>
+                                <option value="1">Gasoil</option>
+                                <option value="2">Essence</option>
+                                <option value="3">GPL</option>
+                                <option value="3">Electrique</option>
+                                <option value="3">Hybride</option>
+                                <option value="0">--------------------</option>
+                                </select> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordeon Marque-->
+                    <div class="accordion-item px-3 mb-2">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Marque
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushVente">
+                        <div class="accordion-body">
+                            <select id="oMarque" name="oMarque" class="custom-select bgGris ">
+                                <option selected="selected" value="0">Marque</option>
+                                <option value="1">Renault</option>
+                                <option value="2">Peugeot</option>
+                                <option value="3">Fiat</option>
+                                <option value="4">Mercedes</option>
+                                <option value="5">Audi</option>
+                                <option value="6">Porche</option>
+                                <option value="7">Nissan</option>
+                                <option value="8">Volskwagen</option>
+                                <option value="0">--------------------</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordeon Option /-->
+                    <div class="accordion-item px-3 mb-2">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Option
+                        </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse " aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushVente">
+                        <div class="accordion-body">
+                                <select id="oModele" name="oModele" class="custom-select bgGris ">
+                                <option selected="selected" value="0">Options</option>
+                                <option value="1">Cuir</option>
+                                <option value="2">Hifi Bose</option>
+                                <option value="3">Boite automatique</option>
+                                <option value="4">Jantes Alu</option>
+                                <option value="5">Spoiler</option>
+                                <option value="0">--------------------</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordeon Kilométrage maximal-->
+                    <div class="accordion-item px-3 mb-2">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Kilométrage maximal
+                        </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushVente">
+                        <div class="accordion-body">
+                                <select id="oMarque" name="oMarque" class="custom-select bgGris ">
+                                <option selected="selected" value="0">Kilométrage maximal</option>
+                                <option value="1">&lsaquo; 20 000 km</option>
+                                <option value="2">&lsaquo; 40 000 km</option>
+                                <option value="3">&lsaquo; 70 000 km</option>
+                                <option value="4">&lsaquo; 100 000 km</option>
+                                <option value="5">&lsaquo; 150 000 km</option>
+                                <option value="6">sans importance</option>
+                                <option value="0">--------------------</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordeon Ancienneté-->
+                    <div class="accordion-item px-3 mb-2">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Ancienneté
+                        </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushVente">
+                        <div class="accordion-body">
+                                <select id="oMarque" name="oMarque" class="custom-select bgGris ">
+                                <option selected="selected" value="0">Ancienneté</option>
+                                <option value="1">1 an</option>
+                                <option value="2">2 ans</option>
+                                <option value="3">5 ans</option>
+                                <option value="4">sans importance</option>
+                                <option value="0">--------------------</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single Sider range-->
+                    <div>
+                        <p class="mt-3 ms-3"><strong>Prix</strong></p>
+                        <div>
+                            <form class="text-center mb-2">
+                                <label for="customRange"></label>
+                                <input type="range" class="custom-range" id="customRange">
+                            </form>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <p class="pt-1 pb-1 ms-5 mx-3 px-3 bgGris">2000</p>
+                            <p class="pt-1 pb-1 ms-5 mx-3 px-3 bgGris">8000</p>
+                            
+                        </div>
+                        <div class="text-center">
+                            <a class="btn bgBleu textBlanc mb-4"  href="contact.html" title="Cliquez ici afin de nous contacter" role="button" id="bouton2">REINITIALISER</a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

@@ -8,14 +8,26 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styletest.css">
     <script src="js/bootstrap.bundle.min.js" defer></script>
-    <title>Document</title>
+    <title>Site Club Auto les rois de la magouille automobile </title>
 </head>
 <body>
     
     <main class="row">
-        <div class="col-12 col-lg-9">
-            <p>iurtiouezoprgi^zoigopsuergiousoigturtoipugçpoeiutriogurtioghursoitupsoepo</p>
+        <div class="col-12 col-lg-9 row ms-5">
+            <figure class="col-3 col-lg-6">
+                <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" width="40%">
+            </figure>
+            
+            <div class="col-lg-6 row d-flex mb-0">
+                <p class="col-6 col-lg-6 h5 pt-4"><strong>BMW 535I, NAVI, LEATHER, ABS</strong></p>
+                <p class="col-4  col-lg-3 textBlanc h4 bgBleu hauteur2 ms-4 pt-2 pe-4 text-end mb-0">5 500 &euro;</p>
+                <div class="float-lg-start" id="textVente">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                </div>
+            </div>
         </div>
+        <!-- DEBUT ACCORDEON -->
         <div class="col-12 col-lg-2 ">
             <div class="row bgNoir pt-3 pb-2 mb-3 me-1 ms-1">
                 <img src="Images/icone-voiture.png" alt="icone de recherche de véhicule" class="col-3 col-lg-3">
@@ -23,13 +35,14 @@
             </div>
             
             <div class="accordion accordion-flush shadow-lg mt-3" id="accordionFlushVente">
+                <!-- Accordeon Type-->
                 <div class="accordion-item px-3 mb-2">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     Type
                     </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushVente">
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushVente">
                     <div class="accordion-body">
                             <select id="oType" name="oType" class="custom-select bgGris ">
                             <option selected="selected" value="0">Type</option>
@@ -39,9 +52,10 @@
                             <option value="4">Utilitaire</option>
                             <option value="0">--------------------</option>
                             </select>
+                        </div>
                     </div>
                 </div>
-                </div>
+                <!-- Accordeon Carburant-->
                 <div class="accordion-item px-3 mb-2 h4">
                 <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -59,9 +73,10 @@
                             <option value="3">Hybride</option>
                             <option value="0">--------------------</option>
                             </select> 
+                        </div>
                     </div>
                 </div>
-                </div>
+                <!-- Accordeon Marque-->
                 <div class="accordion-item px-3 mb-2">
                 <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -82,9 +97,10 @@
                             <option value="8">Volskwagen</option>
                             <option value="0">--------------------</option>
                             </select>
+                        </div>
                     </div>
                 </div>
-                </div>
+                <!-- Accordeon Option /-->
                 <div class="accordion-item px-3 mb-2">
                     <h2 class="accordion-header" id="flush-headingFour">
                     <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
@@ -105,6 +121,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Accordeon Kilométrage maximal-->
                 <div class="accordion-item px-3 mb-2">
                     <h2 class="accordion-header" id="flush-headingFive">
                     <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
@@ -126,6 +143,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Accordeon Ancienneté-->
                 <div class="accordion-item px-3 mb-2">
                     <h2 class="accordion-header" id="flush-headingSix">
                     <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
@@ -142,18 +160,27 @@
                             <option value="4">sans importance</option>
                             <option value="0">--------------------</option>
                             </select>
-                    </div>
-                    
+                        </div>
                     </div>
                 </div>
+                <!-- single Sider range-->
                 <div>
                     <p class="mt-3 ms-3"><strong>Prix</strong></p>
                     <div>
-                        <form class="text-center">
+                        <form class="text-center mb-2">
                             <label for="customRange"></label>
                             <input type="range" class="custom-range" id="customRange">
                         </form>
                     </div>
+                    <div class="d-flex mb-3">
+                        <p class="pt-1 pb-1 ms-5 mx-3 px-3 bgGris">2000</p>
+                        <p class="pt-1 pb-1 ms-5 mx-3 px-3 bgGris">8000</p>
+                        
+                    </div>
+                    <div class="text-center">
+                        <a class="btn bgBleu textBlanc mb-4"  href="contact.html" title="Cliquez ici afin de nous contacter" role="button" id="bouton2">REINITIALISER</a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
