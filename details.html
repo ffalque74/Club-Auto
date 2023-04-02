@@ -64,7 +64,7 @@
                 <h1 class="accessibility">Menu principal</h1>
                 <p class="accessibility"><a href="#pagecontent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <div class="container"> <!--On demande a ce que le container soit responsive-->
-                    <button id="nav-toggle-button" class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    <button id="nav-toggle-button-index" class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--Definition de l'apparition du bouton-->
                         <span class="btn btn-outline-info"><!--Définition du bouton pour petits ecrans-->
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -76,7 +76,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-lg-2 ">
                         <li class="nav-item "><!--Premier item de la Navbar-->
-                            <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
+                            <a class="nav-link" href="index.html">ACCUEIL</a>
                         </li>
                         <li class="nav-item"><!--Second item de la Navbar-->
                             <a class="nav-link" href="vente.html">VENTE</a>
@@ -85,7 +85,7 @@
                             <a class="nav-link" href="location.html">LOCATION</a>
                         </li>
                         <li class="nav-item"><!--Quatrième item de la Navbar-->
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            <a class="nav-link "href="contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -93,145 +93,7 @@
         </div>
     </header>
     <main>
-         <!-- Ajout annonce et image d'accueil // Attention l'image doit disparaitre sur les smartphones -->
-         <section class="container-fluid pe-0 ps-0" id="maincontent">
-            <img src="Images/vehicule1.jpg" alt="image dee véhicules" id="imageVehicules" class="d-none d-lg-flex w-100">
-            <h1 id="mainH1" class="textBlanc h1 bgNoir mb-0 pt-4"><strong>CLUB AUTO &nbsp;</strong><span class="textMarron h1"><strong> MEILLEUR DE l'AUTOMOBILE</strong></span></h1> 
-        </section>
-        <div class="row pt-5 ms-4 me-4">
-            <img class="col-12 col-lg-6 mb-4" src="Images/clients.jpg" alt="image de clients heureux">
-            <article class="col-12 col-lg-6">
-                <h2 class="h1"><strong>BIENVENUE CHEZ </strong> <span class="textMarron"><strong>CLUB AUTO</strong></span></h2>
-                    <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>  
-            </article>
-        </div>
-        <div class="d-flex row pt-5 ms-4 me-4">
-            <article class="col-12 col-lg-6">
-                <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
-                <ul class="pt-4 pb-4" id="coches">
-                    <li><p>Lorem ipsum dolor sit amet</p></li>
-                    <li><p>Lorem ipsum dolor sit amet</p></li>
-                    <li><p>Lorem ipsum dolor sit amet</p></li>
-                    <li><p>Lorem ipsum dolor sit amet</p></li>
-                    <li><p>Lorem ipsum dolor sit amet</p></li>
-                </ul>
-            </article>
-            <img class="col-12 col-lg-6 mb-4" src="Images/entretien.jpg" alt="image d'un technicien qui nettoye une voiture">
-        </div>
-        <!-- Section des véhicules à louer ou vendre -->
-        <section class="mt-0 row d-flex">
-            <div class="d-none d-lg-flex col-lg-1 vide">
-            </div>
-            <article class="col-12 col-lg-4 bgOrange pe-4 ps-4 pb-3 pt-3" id="location">
-                <h2><strong>Vous souhaitez louer ?</strong></h2>
-                <p class="textBlanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                </p>
-            </article >
-            <div class="d-none d-lg-flex col-lg-1 vide">
-            </div>
-            <article class="col-12 col-lg-4 bgRouge pe-4 ps-4 pt-3 pb-3" id="vente">
-                <h2><strong>Vous souhaitez acheter ?</strong></h2>
-                <p class="textBlanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  
-                </p>
-            </article >
-            <!-- Ajout image des ventes et Locations-->
-            <p class="container-fluid me-0 ms-0 mb-0 bgNoir">
-                <img src="Images/venteLocation.png" alt="image de vente et de location" id="imgVente" >
-            </p>
-            <!-- Section des véhicules récents à vendre -->
-            <div class="bgNoir" id="vehiculeRecent">
-                <h1 class="textBlanc h1 text-center" id="textvehicule"><strong>VEHICULES RECENTS</strong></h1>
-                <p class="border-bottom pt-4" id="bordure"></p>
-            </div>
-            <!-- Ajout des 3 véhicules à vendre -->
-            <div >
-                <div class="bgNoir row d-flex justify-content-center mb-0" id="vehiculeNeuf">
-                    <figure class="col-lg-3 mb-0">
-                        <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" class="img-fluid"> 
-                    </figure>
-                    <!-- Ce véhicule diparait dans la version smartphone -->
-                    <figure class="col-3 d-none d-lg-block mb-0">
-                        <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" class="img-fluid"> 
-                    </figure>
-                    <!-- Ce véhicule diparait dans la version smartphone -->
-                    <figure class="col-3 d-none d-lg-block mb-0">
-                        <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" class="img-fluid">
-                    </figure>
-                    <div class="col-lg-3 row d-flex justify-content-center bgNoir fondDescription mx-3">
-                        <p class="col-7 textBlanc h5 pt-4">BMW 535I, NAVI,<br>LEATHER, ABS</p>
-                        <p class="col-4 d-inline p-3 textBlanc h4 bgBleu hauteur">5 500 &euro;</p>
-                    </div>
-                    <div class="d-none d-lg-flex row justify-content-center bgNoir fondDescription">
-                        <p class="col-7 textBlanc h5 pt-4">BMW 328I, SPORT,<br>LINE BODY KIT</p>
-                        <p class="col-4 d-inline p-3 textBlanc h4 bgBleu hauteur">8 000 &euro;</p>
-                    </div>
-                    <div class="d-none d-lg-flex row justify-content-center bgNoir fondDescription">
-                        <p class="col-7 textBlanc h5 pt-4">FORD EXPLORER 2015<br>4WD</p>
-                        <p class="col-4 d-inline p-1 bgBleu text-center hauteur"><span id="prix"> 9 000 &euro;</span><br><span class="textBlanc h4">8 200 &euro;</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-             <!-- Ajout des 4 paragraphes de services -->
-            <section>
-                <h2 class="h1 text-center" id="pourquoi"><strong>Pourquoi nous choisir ?</strong></h2>
-                <div class="row">
-                    <div class="col-12 col-lg-3 d-flex mb-2 px-5">
-                        <img src="Images/icon1.png" alt="icone de financement" class="image pe-3">
-                        <div>
-                            <h5 class="h5"><strong>FINANCEMENT</strong></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 d-flex mb-2 px-5">
-                        <img src="Images/icon2.png" alt="icone de réctivité technique" class="image pe-3">
-                        <div>
-                            <h5 class="h5"><strong>REACTIVITE DE L'EQUIPE TECHNIQUE</strong></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 d-flex mb-2 px-5">
-                        <img src="Images/icon3.png" alt="icone de l'écoute clientèle" class="image pe-3">
-                        <div>
-                            <h5 class="h5"><strong>A L'ECOUTE DE NOTRE CLIENTELE</strong></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 d-flex mb-2 px-5">
-                        <img src="Images/icon4.png" alt="icone de service de maintenance" class="image pe-3">
-                        <div>
-                            <h5 class="h5"><strong>SERVICE & MAINTENANCE</strong></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="d-flex justify-content-center pb-5">
-                <a class="btn bgBleu textBlanc"  href="contact.html" title="Cliquez ici afin de nous contacter" role="button" id="bouton">CONTACTEZ NOUS</a>
-            </div>
-        </section>
-        <!-- Ajout de la derniere photo de la page avec un encart promotionnel -->
-        <section>
-            <div class="col-10 col-lg-3 bgOrange pb-2 pt-2 ps-5" id="banniere">
-                <h1><strong>CLUB AUTO<br><span class="textBlanc">VENTE ET LOCATION</span></strong></h1>
-                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            <div  class="container-fluid pe-0 ps-0 mb-0 mt-0 bgNoir">
-                <img src="Images/vehicule4.png" alt="image d'une auto" class="me-0 ms-0">
-            </div> 
-        </section>
+         
     </main>
     <!-- FOOTER -->
     <footer class="bgNoir">

@@ -64,7 +64,7 @@
         <div id="secondSection">
             <!--Navbar Full responsive -->
             <nav class="navbar navbar-expand-lg bgGris navbar-light" id="navbar"> <!--L'instruction d-none d-lg-flex permet de supprimer le gris de ma nav barre en SM-->
-                <h1 class="accessibility">Menu principal</h1>
+                <h5 class="accessibility">Menu principal</h5><!-- H1 enlevé recommandation W3C-->
                 <p class="accessibility"><a href="#pagecontent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <div class="container"> <!--On demande a ce que le container soit responsive-->
                     <button id="nav-toggle-button-vente" class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -82,10 +82,10 @@
                             <a class="nav-link" href="index.html">ACCUEIL</a>
                         </li>
                         <li class="nav-item"><!--Second item de la Navbar-->
-                            <a class="nav-link active" aria-current="page" href="vente.html">VENTE</a>
+                            <a class="nav-link " href="vente.html">VENTE</a>
                         </li>
                         <li class="nav-item"><!--Troisièmeitem de la Navbar-->
-                            <a class="nav-link" href="location.html">LOCATION</a>
+                            <a class="nav-link active" aria-current="page" href="location.html">LOCATION</a>
                         </li>
                         <li class="nav-item"><!--Quatrième item de la Navbar-->
                             <a class="nav-link" href="contact.html">CONTACT</a>
@@ -96,14 +96,14 @@
         </div>
     </header>
     <main>
+        <!-- Titre VENTE du Haut de la page -->
         <figure>
-            <h1 class="textBlanc" id="h1Vente"><strong>VENTE</strong></h1>
+            <h1 class="textBlanc" id="h1Vente"><strong>LOCATION</strong></h1>
             <img src="Images/vente-location.jpg" alt="image d'une voiture" class="d-lg-none img-fluid imgVente2">
             <img src="Images/imgVente.png" alt="image d'une voiture" class="d-none d-lg-flex img-fluid imgVente2">
         </figure>
         <div class="row"><!-- Separation de la feuille en 2 parties -->
-            <p class="col-lg-2"></p>
-            <div class="col-9">
+            <div class="col-12">
                 <div class="row">
                     <div class="col-1 d-lg-none">
                     </div>
@@ -113,7 +113,7 @@
                             <img src="Images/icone-voiture.png" alt="icone de recherche de véhicule" class="col-3 col-lg-3">
                             <h1 class="h4 col-5 col-lg-8 textBlanc bgNoir">Rechercher</h1>
                         </div>
-                        <div class="col-12 accordion accordion-flush shadow-lg mt-3" id="accordionFlushVente">
+                        <div class="col-12 accordion accordion-flush shadow-lg mt-3" id="accordionFlushVenteSM">
                             <!-- Accordeon Type-->
                             <div class="accordion-item px-3 mb-2">
                             <h2 class="accordion-header" id="flush-headingOne">
@@ -121,9 +121,9 @@
                                 Type
                                 </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushVente">
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushVenteSM">
                                 <div class="accordion-body">
-                                        <select id="oType" name="oType" class="custom-select bgGris ">
+                                        <select id="oTypeSM" name="oTypeSM" class="custom-select bgGris ">
                                         <option selected="selected" value="0">Type</option>
                                         <option value="1">Berline</option>
                                         <option value="2">Monospace</option>
@@ -143,7 +143,7 @@
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushVente">
                                 <div class="accordion-body">
-                                        <select id="oCarburant" name="oCarburant" class="custom-select bgGris ">
+                                        <select id="oCarburantSM" name="oCarburantSM" class="custom-select bgGris ">
                                         <option selected="selected" value="0">Carburant</option>
                                         <option value="1">Gasoil</option>
                                         <option value="2">Essence</option>
@@ -164,7 +164,7 @@
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushVente">
                                 <div class="accordion-body">
-                                    <select id="oMarque" name="oMarque" class="custom-select bgGris ">
+                                    <select id="oMarqueSM" name="oMarqueSM" class="custom-select bgGris ">
                                         <option selected="selected" value="0">Marque</option>
                                         <option value="1">Renault</option>
                                         <option value="2">Peugeot</option>
@@ -188,7 +188,7 @@
                                 </h2>
                                 <div id="flush-collapseFour" class="accordion-collapse collapse " aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushVente">
                                 <div class="accordion-body">
-                                        <select id="oModele" name="oModele" class="custom-select bgGris ">
+                                        <select id="oModeleSM" name="oModeleSM" class="custom-select bgGris ">
                                         <option selected="selected" value="0">Options</option>
                                         <option value="1">Cuir</option>
                                         <option value="2">Hifi Bose</option>
@@ -209,7 +209,7 @@
                                 </h2>
                                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushVente">
                                 <div class="accordion-body">
-                                        <select id="oMarque" name="oMarque" class="custom-select bgGris ">
+                                        <select id="oKilometreSM" name="oKilometreSM" class="custom-select bgGris ">
                                         <option selected="selected" value="0">Kilométrage maximal</option>
                                         <option value="1">&lsaquo; 20 000 km</option>
                                         <option value="2">&lsaquo; 40 000 km</option>
@@ -231,7 +231,7 @@
                                 </h2>
                                 <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushVente">
                                 <div class="accordion-body">
-                                        <select id="oMarque" name="oMarque" class="custom-select bgGris ">
+                                        <select id="oAncienneteSM" name="oAncenneteSM" class="custom-select bgGris ">
                                         <option selected="selected" value="0">Ancienneté</option>
                                         <option value="1">1 an</option>
                                         <option value="2">2 ans</option>
@@ -259,11 +259,12 @@
                                     <a class="btn bgBleu textBlanc mb-4"  href="contact.html" title="Cliquez ici afin de nous contacter" role="button" id="bouton2">REINITIALISER</a>
                                 </div>
                             </div>
-                     </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Les des voitures à vendre -->
-            <div class="col-12 col-lg-12 row">
+            <div class="row col-12 col-lg-9 mt">
                 <div>
                     <div class="row">
                         <!-- Ajout d'une colonne vide -->
@@ -278,16 +279,110 @@
                         </div>
                     </div>
                 </div>
-                <div class="row col-lg-09"> 
-                    <div class="row col-12 col-lg-9">
-                        <div class="col-1"></div>
+                <div class="row"> 
+                    <div class="row col-12 col-lg-12">
+                        <div class="col-1">
+                        </div>
                         <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom" id="separationVente"></p> 
                         <!-- Colonne Vide -->
                         <div class="col-1 col-lg-1">  
                         </div>
                         <!-- Colonne d'affichage de la voiture -->
                         <figure class="col-11 col-lg-4 ms-5">
-                            <p class="col-3 d-lg-none textBlanc h3 text-end bgBleu prixVenteSM">5 500 &euro;</p>
+                            <p class="col-3 d-lg-none textBlanc h3 text-end bgBleu prixVenteSM">20&euro;/jour</p>
+                            <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" class="img-fluid"> 
+                        </figure>
+                        <!-- Colonnes avec le titre le prix et le texte-->
+                        <div class="col-12 col-lg-6 row d-flex mb-0">
+                            <div class="col-1 d-lg-none">
+                            </div>
+                            <p class="col-11 col-lg-6 h5 pt-4"><strong>BMW 535I, NAVI, LEATHER, ABS</strong></p>
+                            <p class="d-none d-lg-flex col-lg-3 textBlanc h4 bgBleu hauteur2 ms-5 pt-2 text-end mb-0">20&euro;/jour</p>
+                            <div class="col-1 d-lg-none">
+                            </div>
+                            <div class="col-11 col-lg-10 mt-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <a href="#" class="savoiPlus">&raquo; En savoir plus &laquo;</a>
+                            </div>  
+                        </div>
+                        <div class="col-1">
+                        </div>
+                        <p class="d-none col-lg-9 border-bottom mb-4 bordureVente"></p>
+                    </div>
+                    <div class="row col-12 col-lg-12">
+                        <div class="col-1">
+                        </div>
+                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom"></p> 
+                        <!-- Colonne Vide -->
+                        <div class="col-1 col-lg-1">  
+                        </div>
+                        <!-- Colonne d'affichage de la voiture -->
+                        <figure class="col-11 col-lg-4 ms-5">
+                            <p class="col-3 d-lg-none textBlanc h3 text-end bgBleu prixVenteSM">20&euro;/jour</p>
+                            <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" class="img-fluid"> 
+                        </figure>
+                        <!-- Colonnes avec le titre le prix et le texte-->
+                        <div class="col-12 col-lg-6 row d-flex mb-0">
+                            <div class="col-1 d-lg-none">
+                            </div>
+                            <p class="col-11 col-lg-6 h5 pt-4"><strong>BMW 535I, NAVI, LEATHER, ABS</strong></p>
+                            <p class="d-none d-lg-flex col-lg-3 textBlanc h4 bgBleu hauteur2 ms-5 pt-2 text-end mb-0">20&euro;/jour</p>
+                            <div class="col-1 d-lg-none">
+                            </div>
+                            <div class="col-11 col-lg-10 mt-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <a href="details.html" class="savoiPlus">&raquo; En savoir plus &laquo;</a>
+                            </div>  
+                        </div>
+                        <div class="col-1">
+                        </div>
+                        <p class="d-none col-lg-9 border-bottom mb-4 bordureVente"></p>
+                    </div>
+                    <div class="row col-12 col-lg-12">
+                        <div class="col-1">
+                        </div>
+                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom"></p> 
+                        <!-- Colonne Vide -->
+                        <div class="col-1 col-lg-1">  
+                        </div>
+                        <!-- Colonne d'affichage de la voiture -->
+                        <figure class="col-11 col-lg-4 ms-5">
+                            <p class="col-3 d-lg-none textBlanc h3 text-end bgBleu prixVenteSM">20&euro;/jour</p>
+                            <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" class="img-fluid"> 
+                        </figure>
+                        <!-- Colonnes avec le titre le prix et le texte-->
+                        <div class="col-12 col-lg-6 row d-flex mb-0">
+                            <div class="col-1 d-lg-none">
+                            </div>
+                            <p class="col-11 col-lg-6 h5 pt-4"><strong>BMW 535I, NAVI, LEATHER, ABS</strong></p>
+                            <p class="d-none d-lg-flex col-lg-3 textBlanc h4 bgBleu hauteur2 ms-5 pt-2 text-end mb-0">20&euro;/jour</p>
+                            <div class="col-1 d-lg-none">
+                            </div>
+                            <div class="col-11 col-lg-10 mt-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <a href="details.html" class="savoiPlus">&raquo; En savoir plus &laquo;</a>
+                            </div>  
+                        </div>
+                        <div class="col-1">
+                        </div>
+                        <p class="d-none col-lg-9 border-bottom mb-4 bordureVente"></p>
+                    </div>
+                    <div class="row col-12 col-lg-12">
+                        <div class="col-1">
+                        </div>
+                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom"></p> 
+                        <!-- Colonne Vide -->
+                        <div class="col-1 col-lg-1">  
+                        </div>
+                        <!-- Colonne d'affichage de la voiture -->
+                        <figure class="col-11 col-lg-4 ms-5">
+                            <p class="col-3 d-lg-none textBlanc h3 text-end bgBleu prixVenteSM">20&euro;/jour</p>
                             <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" class="img-fluid"> 
                         </figure>
                         <!-- Colonnes avec le titre le prix et le texte-->
@@ -298,288 +393,190 @@
                             <p class="d-none d-lg-flex col-lg-3 textBlanc h4 bgBleu hauteur2 ms-5 pt-2 text-end mb-0">5 500 &euro;</p>
                             <div class="col-1 d-lg-none">
                             </div>
-                            <div class="col-11 col-lg-10 mt-0" id="textVente">
+                            <div class="col-11 col-lg-10 mt-0">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </p>
-                                <a href="#" class="savoiPlus">&raquo; En savoir plus &laquo;</a>
+                                <a href="details.html" class="savoiPlus">&raquo; En savoir plus &laquo;</a>
                             </div>  
                         </div>
-                        <div class="col-1"></div>
-                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom" id="separationVente"></p> 
-                        <p class="d-none col-lg-9 border-bottom mb-4" id="bordureVente"></p>
+                        <div class="col-1">
+                        </div>
+                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom"></p> 
+                        <p class="d-none col-lg-9 border-bottom mb-4 bordureVente" ></p>
                     </div>
-                    <div class="row col-12 col-lg-09">
-                        <div class="col-1"></div>
-                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom" id="separationVente"></p> 
-                        <!-- Colonne Vide -->
-                        <div class="col-1 col-lg-1">  
+                    <!-- DEBUT ACCORDEON LG -->
+                    <div class="col-lg-3" id="accordeonVenteLG">
+                        <div class="row bgNoir pt-3 pb-2 mb-3 me-1 ms-1">
+                            <img src="Images/icone-voiture.png" alt="icone de recherche de véhicule" class="col-3 col-lg-3">
+                            <h1 class="h4 col-5 col-lg-8 textBlanc bgNoir">Rechercher</h1>
                         </div>
-                        <!-- Colonne d'affichage de la voiture -->
-                        <figure class="col-11 col-lg-4 ms-5">
-                            <p class="col-3 d-lg-none textBlanc h3 text-end bgBleu prixVenteSM">5 500 &euro;</p>
-                            <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" class="img-fluid"> 
-                        </figure>
-                        <!-- Colonnes avec le titre le prix et le texte-->
-                        <div class="col-12 col-lg-6 row d-flex mb-0">
-                            <div class="col-1 d-lg-none">
-                            </div>
-                            <p class="col-11 col-lg-6 h5 pt-4"><strong>BMW 535I, NAVI, LEATHER, ABS</strong></p>
-                            <p class="d-none d-lg-flex col-lg-3 textBlanc h4 bgBleu hauteur2 ms-5 pt-2 text-end mb-0">5 500 &euro;</p>
-                            <div class="col-1 d-lg-none">
-                            </div>
-                            <div class="col-11 col-lg-10 mt-0" id="textVente">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <a href="#" class="savoiPlus">&raquo; En savoir plus &laquo;</a>
-                            </div>  
-                        </div>
-                        <div class="col-1"></div>
-                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom" id="separationVente"></p> 
-                        <p class="d-none col-lg-9 border-bottom mb-4" id="bordureVente"></p>
-                    </div>
-                    <div class="row col-12 col-lg-09">
-                        <div class="col-1"></div>
-                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom" id="separationVente"></p> 
-                        <!-- Colonne Vide -->
-                        <div class="col-1 col-lg-1">  
-                        </div>
-                        <!-- Colonne d'affichage de la voiture -->
-                        <figure class="col-11 col-lg-4 ms-5">
-                            <p class="col-3 d-lg-none textBlanc h3 text-end bgBleu prixVenteSM">5 500 &euro;</p>
-                            <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" class="img-fluid"> 
-                        </figure>
-                        <!-- Colonnes avec le titre le prix et le texte-->
-                        <div class="col-12 col-lg-6 row d-flex mb-0">
-                            <div class="col-1 d-lg-none">
-                            </div>
-                            <p class="col-11 col-lg-6 h5 pt-4"><strong>BMW 535I, NAVI, LEATHER, ABS</strong></p>
-                            <p class="d-none d-lg-flex col-lg-3 textBlanc h4 bgBleu hauteur2 ms-5 pt-2 text-end mb-0">5 500 &euro;</p>
-                            <div class="col-1 d-lg-none">
-                            </div>
-                            <div class="col-11 col-lg-10 mt-0" id="textVente">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <a href="#" class="savoiPlus">&raquo; En savoir plus &laquo;</a>
-                            </div>  
-                        </div>
-                        <div class="col-1"></div>
-                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom" id="separationVente"></p> 
-                        <p class="d-none col-lg-9 border-bottom mb-4" id="bordureVente"></p>
-                    </div>
-                    <div class="row col-12 col-lg-09">
-                        <div class="col-1"></div>
-                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom" id="separationVente"></p> 
-                        <!-- Colonne Vide -->
-                        <div class="col-1 col-lg-1">  
-                        </div>
-                        <!-- Colonne d'affichage de la voiture -->
-                        <figure class="col-11 col-lg-4 ms-5">
-                            <p class="col-3 d-lg-none textBlanc h3 text-end bgBleu prixVenteSM">5 500 &euro;</p>
-                            <img src="Images/vehicule2.jpg" alt="image d'une Audi A3 à vendre" class="img-fluid"> 
-                        </figure>
-                        <!-- Colonnes avec le titre le prix et le texte-->
-                        <div class="col-12 col-lg-6 row d-flex mb-0">
-                            <div class="col-1 d-lg-none">
-                            </div>
-                            <p class="col-11 col-lg-6 h5 pt-4"><strong>BMW 535I, NAVI, LEATHER, ABS</strong></p>
-                            <p class="d-none d-lg-flex col-lg-3 textBlanc h4 bgBleu hauteur2 ms-5 pt-2 text-end mb-0">5 500 &euro;</p>
-                            <div class="col-1 d-lg-none">
-                            </div>
-                            <div class="col-11 col-lg-10 mt-0" id="textVente">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <a href="#" class="savoiPlus">&raquo; En savoir plus &laquo;</a>
-                            </div>  
-                        </div>
-                        <div class="col-1"></div>
-                        <p class="col-10 col-lg-10 ms-4  mt-4 border-bottom" id="separationVente"></p> 
-                        <p class="d-none col-lg-9 border-bottom mb-4" id="bordureVente"></p>
-                    </div>
-                </div>
-            
-                <!-- DEBUT ACCORDEON -->
-                <div class="col-lg-2">
-                    <div class="row bgNoir pt-3 pb-2 mb-3 me-1 ms-1">
-                        <img src="Images/icone-voiture.png" alt="icone de recherche de véhicule" class="col-3 col-lg-3">
-                        <h1 class="h4 col-5 col-lg-8 textBlanc bgNoir">Rechercher</h1>
-                    </div>
-                    
-                    <div class="accordion accordion-flush shadow-lg mt-3" id="accordionFlushVente">
-                        <!-- Accordeon Type-->
-                        <div class="accordion-item px-3 mb-2">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Type
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushVente">
-                            <div class="accordion-body">
-                                    <select id="oType" name="oType" class="custom-select bgGris ">
-                                    <option selected="selected" value="0">Type</option>
-                                    <option value="1">Berline</option>
-                                    <option value="2">Monospace</option>
-                                    <option value="3">Cabriolet</option>
-                                    <option value="4">Utilitaire</option>
-                                    <option value="0">--------------------</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordeon Carburant-->
-                        <div class="accordion-item px-3 mb-2 h4">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Carburant
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushVente">
-                            <div class="accordion-body">
-                                    <select id="oCarburant" name="oCarburant" class="custom-select bgGris ">
-                                    <option selected="selected" value="0">Carburant</option>
-                                    <option value="1">Gasoil</option>
-                                    <option value="2">Essence</option>
-                                    <option value="3">GPL</option>
-                                    <option value="3">Electrique</option>
-                                    <option value="3">Hybride</option>
-                                    <option value="0">--------------------</option>
-                                    </select> 
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordeon Marque-->
-                        <div class="accordion-item px-3 mb-2">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Marque
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushVente">
-                            <div class="accordion-body">
-                                <select id="oMarque" name="oMarque" class="custom-select bgGris ">
-                                    <option selected="selected" value="0">Marque</option>
-                                    <option value="1">Renault</option>
-                                    <option value="2">Peugeot</option>
-                                    <option value="3">Fiat</option>
-                                    <option value="4">Mercedes</option>
-                                    <option value="5">Audi</option>
-                                    <option value="6">Porche</option>
-                                    <option value="7">Nissan</option>
-                                    <option value="8">Volskwagen</option>
-                                    <option value="0">--------------------</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordeon Option /-->
-                        <div class="accordion-item px-3 mb-2">
-                            <h2 class="accordion-header" id="flush-headingFour">
-                            <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                Option
-                            </button>
+                        <div class="col-12 accordion accordion-flush shadow-lg mt-3" id="accordionFlushVente">
+                            <!-- Accordeon Type-->
+                            <div class="accordion-item px-3 mb-2">
+                            <h2 class="accordion-header" id="flush-headingOneLG">
+                                <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneLG" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Type
+                                </button>
                             </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse " aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushVente">
-                            <div class="accordion-body">
-                                    <select id="oModele" name="oModele" class="custom-select bgGris ">
-                                    <option selected="selected" value="0">Options</option>
-                                    <option value="1">Cuir</option>
-                                    <option value="2">Hifi Bose</option>
-                                    <option value="3">Boite automatique</option>
-                                    <option value="4">Jantes Alu</option>
-                                    <option value="5">Spoiler</option>
-                                    <option value="0">--------------------</option>
-                                    </select>
+                            <div id="flush-collapseOneLG" class="accordion-collapse collapse" aria-labelledby="flush-headingOneLG" data-bs-parent="#accordionFlushVente">
+                                <div class="accordion-body">
+                                        <select id="oTypeLG" name="oType" class="custom-select bgGris ">
+                                        <option selected="selected" value="0">Type</option>
+                                        <option value="1">Berline</option>
+                                        <option value="2">Monospace</option>
+                                        <option value="3">Cabriolet</option>
+                                        <option value="4">Utilitaire</option>
+                                        <option value="0">--------------------</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Accordeon Kilométrage maximal-->
-                        <div class="accordion-item px-3 mb-2">
-                            <h2 class="accordion-header" id="flush-headingFive">
-                            <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                Kilométrage maximal
-                            </button>
+                            <!-- Accordeon Carburant-->
+                            <div class="accordion-item px-3 mb-2 h4">
+                            <h2 class="accordion-header" id="flush-headingTwoLG">
+                                <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoLG" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Carburant
+                                </button>
                             </h2>
-                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushVente">
-                            <div class="accordion-body">
-                                    <select id="oMarque" name="oMarque" class="custom-select bgGris ">
-                                    <option selected="selected" value="0">Kilométrage maximal</option>
-                                    <option value="1">&lsaquo; 20 000 km</option>
-                                    <option value="2">&lsaquo; 40 000 km</option>
-                                    <option value="3">&lsaquo; 70 000 km</option>
-                                    <option value="4">&lsaquo; 100 000 km</option>
-                                    <option value="5">&lsaquo; 150 000 km</option>
-                                    <option value="6">sans importance</option>
-                                    <option value="0">--------------------</option>
-                                    </select>
+                            <div id="flush-collapseTwoLG" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoLG" data-bs-parent="#accordionFlushVente">
+                                <div class="accordion-body">
+                                        <select id="oCarburantLG" name="oCarburant" class="custom-select bgGris ">
+                                        <option selected="selected" value="0">Carburant</option>
+                                        <option value="1">Gasoil</option>
+                                        <option value="2">Essence</option>
+                                        <option value="3">GPL</option>
+                                        <option value="3">Electrique</option>
+                                        <option value="3">Hybride</option>
+                                        <option value="0">--------------------</option>
+                                        </select> 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Accordeon Ancienneté-->
-                        <div class="accordion-item px-3 mb-2">
-                            <h2 class="accordion-header" id="flush-headingSix">
-                            <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                                Ancienneté
-                            </button>
+                            <!-- Accordeon Marque-->
+                            <div class="accordion-item px-3 mb-2">
+                            <h2 class="accordion-header" id="flush-headingThreeLG">
+                                <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeLG" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Marque
+                                </button>
                             </h2>
-                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushVente">
-                            <div class="accordion-body">
-                                    <select id="oMarque" name="oMarque" class="custom-select bgGris ">
-                                    <option selected="selected" value="0">Ancienneté</option>
-                                    <option value="1">1 an</option>
-                                    <option value="2">2 ans</option>
-                                    <option value="3">5 ans</option>
-                                    <option value="4">sans importance</option>
-                                    <option value="0">--------------------</option>
-                                    </select>
+                            <div id="flush-collapseThreeLG" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeLG" data-bs-parent="#accordionFlushVente">
+                                <div class="accordion-body">
+                                    <select id="oMarqueLG" name="oMarque" class="custom-select bgGris ">
+                                        <option selected="selected" value="0">Marque</option>
+                                        <option value="1">Renault</option>
+                                        <option value="2">Peugeot</option>
+                                        <option value="3">Fiat</option>
+                                        <option value="4">Mercedes</option>
+                                        <option value="5">Audi</option>
+                                        <option value="6">Porche</option>
+                                        <option value="7">Nissan</option>
+                                        <option value="8">Volskwagen</option>
+                                        <option value="0">--------------------</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- single Sider range-->
-                        <div>
-                            <p class="mt-3 ms-3"><strong>Prix</strong></p>
+                            <!-- Accordeon Option /-->
+                            <div class="accordion-item px-3 mb-2">
+                                <h2 class="accordion-header" id="flush-headingFourLG">
+                                <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourLG" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Option
+                                </button>
+                                </h2>
+                                <div id="flush-collapseFourLG" class="accordion-collapse collapse " aria-labelledby="flush-headingFourLG" data-bs-parent="#accordionFlushVente">
+                                    <div class="accordion-body">
+                                        <select id="oModeleLG" name="oModele" class="custom-select bgGris ">
+                                        <option selected="selected" value="0">Options</option>
+                                        <option value="1">Cuir</option>
+                                        <option value="2">Hifi Bose</option>
+                                        <option value="3">Boite automatique</option>
+                                        <option value="4">Jantes Alu</option>
+                                        <option value="5">Spoiler</option>
+                                        <option value="0">--------------------</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordeon Kilométrage maximal-->
+                            <div class="accordion-item px-3 mb-2">
+                                <h2 class="accordion-header" id="flush-headingFiveLG">
+                                <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveLG" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    Kilométrage maximal
+                                </button>
+                                </h2>
+                                <div id="flush-collapseFiveLG" class="accordion-collapse collapse" aria-labelledby="flush-headingFiveLG" data-bs-parent="#accordionFlushVente">
+                                    <div class="accordion-body">
+                                        <select id="oKilometreLG" name="oKilometre" class="custom-select bgGris ">
+                                        <option selected="selected" value="0">Kilométrage maximal</option>
+                                        <option value="1">&lsaquo; 20 000 km</option>
+                                        <option value="2">&lsaquo; 40 000 km</option>
+                                        <option value="3">&lsaquo; 70 000 km</option>
+                                        <option value="4">&lsaquo; 100 000 km</option>
+                                        <option value="5">&lsaquo; 150 000 km</option>
+                                        <option value="6">sans importance</option>
+                                        <option value="0">--------------------</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordeon Ancienneté-->
+                            <div class="accordion-item px-3 mb-2">
+                                <h2 class="accordion-header" id="flush-headingSixLG">
+                                <button class="accordion-button collapsed bgGris" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixLG" aria-expanded="false" aria-controls="flush-collapseSix">
+                                    Ancienneté
+                                </button>
+                                </h2>
+                                <div id="flush-collapseSixLG" class="accordion-collapse collapse" aria-labelledby="flush-headingSixLG" data-bs-parent="#accordionFlushVente">
+                                    <div class="accordion-body">
+                                        <select id="oAncienneteLG" name="oAnciennete" class="custom-select bgGris ">
+                                        <option selected="selected" value="0">Ancienneté</option>
+                                        <option value="1">1 an</option>
+                                        <option value="2">2 ans</option>
+                                        <option value="3">5 ans</option>
+                                        <option value="4">sans importance</option>
+                                        <option value="0">--------------------</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single Sider range-->
                             <div>
-                                <form class="text-center mb-2">
-                                    <label for="customRange"></label>
-                                    <input type="range" class="custom-range" id="customRange">
-                                </form>
+                                <p class="mt-3 ms-3"><strong>Prix</strong></p>
+                                <div>
+                                    <form class="text-center mb-2">
+                                        <label for="customRange"></label>
+                                        <input type="range" class="custom-range">
+                                    </form>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <p class="pt-1 pb-1 ms-5 mx-3 px-3 bgGris">2000</p>
+                                    <p class="pt-1 pb-1 ms-5 mx-3 px-3 bgGris">80 000</p>
+                                </div>
+                                <div class="text-center">
+                                    <a class="btn bgBleu textBlanc mb-4 bouton2"  href="contact.html" title="Cliquez ici afin de nous contacter" role="button">REINITIALISER</a>
+                                </div>
                             </div>
-                            <div class="d-flex mb-3">
-                                <p class="pt-1 pb-1 ms-5 mx-3 px-3 bgGris">2000</p>
-                                <p class="pt-1 pb-1 ms-5 mx-3 px-3 bgGris">8000</p>
-                                
-                            </div>
-                            <div class="text-center">
-                                <a class="btn bgBleu textBlanc mb-4"  href="contact.html" title="Cliquez ici afin de nous contacter" role="button" id="bouton2">REINITIALISER</a>
-                            </div>
-                            
                         </div>
-                    </div>
+                    </div><!-- FIN ACCORDEON LG -->
                 </div>
             </div>
         </div>
-
-
-
-
-        
     </main>
     <!-- FOOTER -->
     <footer class="bgNoir">
         <section class="row pt-5 gx-4">
             <div class="col-12 col-md-6 col-lg-3" id="footerClubauto">
-                <h1 class="textBlanc h5"><strong><span class="textBleu">CLUB</span> AUTO</strong></h1>
+                <h5 class="textBlanc h5"><strong><span class="textBleu">CLUB</span> AUTO</strong></h5>
                 <p class="textGris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="col-12 col-md-6 col-lg-3" id="footerHoraires">
-                <h1 class="textBlanc h5"><strong>HORAIRES D'OUVERTURE</strong></h1>
+                <h5 class="textBlanc h5"><strong>HORAIRES D'OUVERTURE</strong></h5>
                 <p><span class="textGris">lundi - Samedi :</span><span class="textBlanc"> 9:00 - 17:00</span><br><span class="textGris">Dimanche et jours fériés : </span><span class="textBlanc">Fermé</span>
                 </p>
             </div>
             <div class="col-12 col-md-6 col-lg-3" id="footerNewsletter">
-                <h1 class="textBlanc h5"><strong>NEWSLETTER</strong></h1>
+                <h5 class="textBlanc h5"><strong>NEWSLETTER</strong></h5>
                 <div id="newsletter" class="newsletter row">
                     <form action="#" id="frmContact" class="input-group">
                         <input type="search" name="rss" placeholder="entrez votre email" class="form-control">
@@ -593,7 +590,7 @@
                 <p class="textGris">Inscrivez-vous pour recevoir les <br> dernières offres</p>
             </div>
             <div class="col-12 col-md-6 col-lg-3" id="footerReseaux">
-                <h1 class="textBlanc h5"><strong>RESEAUX SOCIAUX</strong></h1>
+                <h5 class="textBlanc h5"><strong>RESEAUX SOCIAUX</strong></h5>
                 <a class="btn bgGris" href="http://www.facebook.com" title="cliquez ici pour vous rendre sur Facebook" target="_blank" role="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
