@@ -162,7 +162,8 @@ nav{
     border-color: var(--deepgrey)!important;
     border-bottom-width: small !important;
 }
-#bordureVente{
+
+.bordureVente{
     margin-left: 170px;
     border-color: var(--grey)!important;
     border-bottom-width: small !important;
@@ -215,19 +216,19 @@ nav{
     padding-top: 10px;
     height: 50px;
 }
-.formulaire{ƒ
-    width:500px ;
+.formulaire{
+    width: 500px ;
 }
 #h1Vente{
     position: relative;
     left:  1em;
-    top: 7rem;ƒ
+    top: 7rem;
     font-size: 4em;
     z-index: 25;
 }
 .imgVente2{
     position: relative;
-    top: -6.3rem;
+    top: -5.3rem;
     -webkit-filter: brightness(60%);
     z-index: 20;
 }
@@ -244,16 +245,25 @@ nav{
 #accordeonVenteSM{
     z-index: 30;
     position: relative;
-    top: -160px;
-   
+    top: -160px; 
+}
+#accordeonVenteLG{
+    z-index: 30;
+    position: relative;
+    top: -1700px;
+    left: 80em;
 }
 .prixVenteSM{
     position: relative;
     left: 292px;
     top: 295px;
     height: 2em;
-    font-size: ;
+   
 }
 .separationVente{
     margin-left: 10%;
+}
+#test{
+    position: relative;
+    top: -800px;
 }
