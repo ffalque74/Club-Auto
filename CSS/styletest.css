@@ -42,6 +42,9 @@
 .bgBleu{
     background-color: var(--bleu);
 }
+.bgBlanc{
+    background-color: var(--white);
+}
 .textSize08{
     font-size: .8rem;
 }
@@ -266,4 +269,15 @@ nav{
 #test{
     position: relative;
     top: -800px;
+}
+#formulaireContact{
+    position: relative;
+    top: -8em;
+    z-index: 30;
+}
+#imgContact{
+    z-index: 25;
+}
+#exampleModal{
+    z-index: 40;
 }

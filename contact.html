@@ -61,7 +61,7 @@
         <div id="secondSection">
             <!--Navbar Full responsive -->
             <nav class="navbar navbar-expand-lg bgGris navbar-light" id="navbar"> <!--L'instruction d-none d-lg-flex permet de supprimer le gris de ma nav barre en SM-->
-                <h1 class="accessibility">Menu principal</h1>
+                <h2 class="accessibility">Menu principal</h2>
                 <p class="accessibility"><a href="#pagecontent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <div class="container"> <!--On demande a ce que le container soit responsive-->
                     <button id="nav-toggle-button-index" class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -92,49 +92,84 @@
             </nav> 
         </div>
     </header>
-    <main>
-
+    <main id="maincontent">
+        <div>
+            <img src="Images/vehicule5.png" alt="image d'un véhicule" class="w-100" id="imgContact">
+        </div>
         <form>
-            <fieldset disabled>
-              <legend>Disabled fieldset example</legend>
-              <div class="mb-3">
-                <label for="disabledTextInput" class="form-label">Disabled input</label>
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-              </div>
-              <div class="mb-3">
-                <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                <select id="disabledSelect" class="form-select">
-                  <option>Disabled select</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                  <label class="form-check-label" for="disabledFieldsetCheck">
-                    Can't check this
-                  </label>
+           
+                <div class="row" id="formulaireContact">
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="row col-lg-9 bgBlanc shadow-lg mt-3 ms-5">
+                        <h1 class="mb-4 mt-5"><strong>CONTACTEZ NOUS</strong></h1>
+                        <div class="col-lg-4">
+                            <div class="mb-3">
+                                <label for="prenom" class="form-label">Prénom*</label>
+                                <input type="text" id="prenom" class="form-control bgGris mb-4" required placeholder="Entrez votre prénom">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email*</label>
+                                <input type="email" id="email" class="form-control bgGris" required placeholder="Entrez votre adresse mail">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom*</label>
+                                <input type="text" id="nom" class="form-control bgGris mb-4" required placeholder="Entrez votre nom">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">téléphone</label>
+                                <input type="text" id="phone" class="form-control bgGris" placeholder="Entrez votre numéro de téléphone">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label for="message" class="mb-2">Message</label>
+                                <textarea class="form-control bgGris" id="message" placeholder="Ecrivez votre message" rows="5"></textarea>
+                            </div>
+                             <!-- Button trigger modal -->
+                            <button type="submit" class="btn bgBleu textBlanc mt-3 mb-4 px-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                ENVOYEZ
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </fieldset>
           </form>
-
-         
+          <!-- Boite Modale de remerciement -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">CLUB AUTO</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <p>Nous vous remercions pour votre message.
+                Nous le transferons à nos équipes. Nous vous recontacterons au plus vite.
+                </p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+            </div>
+        </div>
     </main>
     <!-- FOOTER -->
     <footer class="bgNoir">
         <section class="row pt-5 gx-4">
             <div class="col-12 col-md-6 col-lg-3" id="footerClubauto">
-                <h1 class="textBlanc h5"><strong><span class="textBleu">CLUB</span> AUTO</strong></h1>
+                <h5 class="textBlanc h5"><strong><span class="textBleu">CLUB</span> AUTO</strong></h5>
                 <p class="textGris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="col-12 col-md-6 col-lg-3" id="footerHoraires">
-                <h1 class="textBlanc h5"><strong>HORAIRES D'OUVERTURE</strong></h1>
+                <h5 class="textBlanc h5"><strong>HORAIRES D'OUVERTURE</strong></h5>
                 <p><span class="textGris">lundi - Samedi :</span><span class="textBlanc"> 9:00 - 17:00</span><br><span class="textGris">Dimanche et jours fériés : </span><span class="textBlanc">Fermé</span>
                 </p>
             </div>
             <div class="col-12 col-md-6 col-lg-3" id="footerNewsletter">
-                <h1 class="textBlanc h5"><strong>NEWSLETTER</strong></h1>
+                <h5 class="textBlanc h5"><strong>NEWSLETTER</strong></h5>
                 <div id="newsletter" class="newsletter row">
                     <form action="#" id="frmContact" class="input-group">
                         <input type="search" name="rss" placeholder="entrez votre email" class="form-control">
@@ -148,7 +183,7 @@
                 <p class="textGris">Inscrivez-vous pour recevoir les <br> dernières offres</p>
             </div>
             <div class="col-12 col-md-6 col-lg-3" id="footerReseaux">
-                <h1 class="textBlanc h5"><strong>RESEAUX SOCIAUX</strong></h1>
+                <h5 class="textBlanc h5"><strong>RESEAUX SOCIAUX</strong></h5>
                 <a class="btn bgGris" href="http://www.facebook.com" title="cliquez ici pour vous rendre sur Facebook" target="_blank" role="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
