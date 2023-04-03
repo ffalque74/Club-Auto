@@ -11,30 +11,56 @@
     <title>Site Club Auto les rois de la magouille automobile </title>
 </head>
 <body>
-    
- <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="row ms-5 me-3">
+        <div class="col-lg-1">
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-      </div>
+        <div class="col-12 col-lg-11">
+            <ul class="nav nav-pills mb-3 col-12 col-lg-9" id="pills-tab" role="tablist">
+                <li class="nav-item ms-5 marginDetails" role="presentation">
+                <button class="nav-link pillstab" id="pills-description-tab" data-bs-toggle="pill" data-bs-target="#pills-description" type="button" role="tab" aria-controls="pills-home" aria-selected="true">DESCRIPTION</button>
+                </li>
+                <li class="nav-item ms-5 marginDetails" role="presentation">
+                <button class="nav-link pillsTab" id="pills-technique-tab" data-bs-toggle="pill" data-bs-target="#pills-technique" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">TECHNIQUE</button>
+                </li>
+                <li class="nav-item ms-5 marginDetails" role="presentation">
+                <button class="nav-link pillsTab" id="pills-option-tab" data-bs-toggle="pill" data-bs-target="#pills-option" type="button" role="tab" aria-controls="pills-option" aria-selected="false">OPTION</button>
+                </li>
+                <li class="nav-item ms-5 marginDetails" role="presentation">
+                <button class="nav-link pillsTab" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">CONTACT</button>
+                </li>
+            </ul>
+            <div class="tab-content col-lg-10" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab" tabindex="1">
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                        </p>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="mb-4 ps-4" id="texteDetails"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em>
+                        </p>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <h5 class="h5"><strong>OPTIONS</strong></h5>
+                    <ul class="pt-4 pb-4 ms-3" id="cochesDetails">
+                        <li><p>Lorem ipsum dolor sit amet</p></li>
+                        <li><p>Lorem ipsum dolor sit amet</p></li>
+                        <li><p>Lorem ipsum dolor sit amet</p></li>
+                        <li><p>Lorem ipsum dolor sit amet</p></li>
+                        <li><p>Lorem ipsum dolor sit amet</p></li>
+                    </ul>
+                    </div>
+                    <div class="tab-pane fade" id="pills-technique" role="tabpanel" aria-labelledby="pills-technique-tab" tabindex="2">222</div>
+                    <div class="tab-pane fade" id="pills-option" role="tabpanel" aria-labelledby="pills-option-tab" tabindex="3">333</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="4">444</div>
+                </div>
+            </div>
     </div>
-  </div>
-   
 </body>
 </html>

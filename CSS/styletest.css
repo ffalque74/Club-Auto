@@ -27,6 +27,9 @@
 .textMarron{
     color: var(--brown);
 }
+.textNoir{
+    color: var(--black);
+}
 .bgGris{
     background-color: var(--grey);
 }
@@ -103,6 +106,12 @@ a:hover{
     top: -90px;
     left: 85%; 
 }
+#nav-toggle-button-contact{
+    background-color: var(--black);
+    position: absolute;
+    top: -170px;
+    left: 85%; 
+}
 /* MAIN */
 #mainH1{
     height: 120px;
@@ -125,6 +134,9 @@ nav{
 /*Ajout d'une coche personalisée à la liste*/
 #coches{
     list-style-image: url(https://img.icons8.com/external-tal-revivo-bold-tal-revivo/24/000000/external-checkmark-sign-with-outline-effect-isolated-on-white-background-votes-bold-tal-revivo.png);
+}
+.cochesDetails{
+    list-style-image: url(https://img.icons8.com/doodle/48/null/checkmark.png);
 }
 #imgVente{ 
     z-index: 90;
@@ -280,4 +292,26 @@ nav{
 }
 #exampleModal{
     z-index: 40;
+}
+.h1Contact{
+    font-size: 4em;
+}
+#imgDetails{
+    width: 90%;
+}
+#cache{
+    z-index: 50;
+    position: relative;
+    top: -16px;
+}
+.pillsTab{
+    width: 15em; 
+}
+.marginDetails{
+    padding-left: 20px;
+    color: var(--white);
+}
+.texteDetails{
+    border-left: solid var(--brown);
+    
 }
