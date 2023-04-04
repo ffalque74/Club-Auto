@@ -1,4 +1,23 @@
-
+@import url('https://fonts.google.com/specimen/Montserrat?query=mont')
+@import url(https://fonts.google.com/specimen/Open+Sans?query=open+sans);
+h1{
+    font-family: montserrat;
+}
+h2{
+    font-family: montserrat;
+}
+h3{
+    font-family: montserrat;
+}
+h4{
+    font-family: montserrat;
+}
+h5{
+    font-family: montserrat;
+}
+body{
+    font-family: open sans-serif;
+}
 
 /*Ajout de nos couleurs personnalisées*/
 :root{
